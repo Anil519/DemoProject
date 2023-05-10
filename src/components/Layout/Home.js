@@ -1,4 +1,4 @@
-const DashBoard=()=>{
+const HomePage=()=>{
     return(
         <>
         <div className="img">
@@ -40,4 +40,4 @@ const DashBoard=()=>{
     )
 
 }
-export default DashBoard;
+export default HomePage;

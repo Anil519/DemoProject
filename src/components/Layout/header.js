@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Header = () => {
+const Header = ({data}) => {
     return (
         <>
             <div className="Nav w-100 position-fixed">
                 <nav className="navbar navbar-light bg-light">
                     <div className="d-flex flex-row bd-highlight mb-3">
                         <div className="p-2  ms-3 bd-highlight">
-                            <Link to='' > <img src={require('../../assets/img/flg_logo4354.png')} className="w-80" /></Link>
+                            <Link to='' > <img src={require('../../assets/img/flg_logo4354.png')} className="w-80" alt="no img" /></Link>
                         </div>
                         <div className="p-2 mt-3  ms-3 bd-highlight">
                             Features
@@ -19,13 +19,13 @@ const Header = () => {
                             Use Cases
                         </div>
                         <div className="p-2 mt-2 bd-highlight dropdown">
-                            <a className="btn btn-transparent dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <Link className="btn btn-transparent dropdown-toggle"  role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                 More
-                            </a>
+                            </Link>
                             <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><a className="dropdown-item" href="#">Action</a></li>
-                                <li><a className="dropdown-item" href="#">Another action</a></li>
-                                <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                <li><Link className="dropdown-item" >Action</Link></li>
+                                <li><Link className="dropdown-item" >Another action</Link></li>
+                                <li><Link className="dropdown-item" >Something else here</Link></li>
                             </ul>
                         </div>
                     </div>
